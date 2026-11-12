@@ -1,5 +1,5 @@
 {
-  description = "pocket-voice-rs: local text-to-speech and speech-to-text in pure Rust";
+  description = "semantic-ai: local text-to-speech and speech-to-text in pure Rust";
 
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 

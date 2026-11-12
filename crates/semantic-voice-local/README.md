@@ -14,7 +14,7 @@ up to the application (the [CLI](../semantic-voice-cli) shows how with `cpal`).
 
 ```toml
 [dependencies]
-semantic-voice-local = { git = "https://github.com/semantiverse/pocket-voice-rs" }
+semantic-voice-local = { git = "https://github.com/semantiverse/semantic-ai" }
 ```
 
 ## Text-to-speech

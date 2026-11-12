@@ -5,7 +5,7 @@ members = ["crates/*"]
 [workspace.package]
 edition = "2024"
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/semantiverse/pocket-voice-rs"
+repository = "https://github.com/semantiverse/semantic-ai"
 
 [profile.release]
 codegen-units = 1

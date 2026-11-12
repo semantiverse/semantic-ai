@@ -1,4 +1,4 @@
-# pocket-voice-rs
+# semantic-ai
 
 Pure-Rust local voice: Kyutai Pocket TTS and Kyutai STT on [candle](https://github.com/huggingface/candle).
 

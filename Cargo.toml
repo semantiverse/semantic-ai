@@ -1,0 +1,19 @@
+[workspace]
+resolver = "3"
+members = ["crates/*"]
+
+[workspace.package]
+edition = "2024"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/semantiverse/pocket-voice-rs"
+
+[profile.release]
+codegen-units = 1
+lto = "thin"
+
+# Model inference is unusably slow without optimizations; keep tests and examples fast.
+[profile.dev.package."*"]
+opt-level = 3
+
+[profile.test]
+opt-level = 3

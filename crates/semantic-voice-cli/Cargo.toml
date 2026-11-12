@@ -1,0 +1,27 @@
+[package]
+name = "semantic-voice-cli"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Demo command line for semantic-voice-local: local text-to-speech and speech-to-text"
+publish = false
+
+[[bin]]
+name = "semantic-voice"
+path = "src/main.rs"
+
+[features]
+default = []
+# Microphone input and speaker output, through cpal (links the system audio library).
+audio-device = ["dep:cpal"]
+metal = ["semantic-voice-local/metal"]
+cuda = ["semantic-voice-local/cuda"]
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4.6", features = ["derive"] }
+cpal = { version = "0.18", optional = true }
+semantic-voice-local = { path = "../semantic-voice-local" }
+serde_json = "1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
